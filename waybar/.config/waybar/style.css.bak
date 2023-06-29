@@ -1,0 +1,185 @@
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: "FontAwesome, JetBrains Mono Nerd Font, monospace";
+    font-size: 15px;
+    min-height: 10px;
+}
+
+/*@keyframes fadeIn {     //get this to work at some point???
+    from { opacity: 0; }
+    to { opacity: 1; }
+}*/
+/*@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}*/
+
+
+window#waybar {
+    background: transparent;
+}
+
+#window {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+tooltip {
+    background: #1e1e2e;
+    color: #ffead3; /* text color not working for some reason?*/
+
+    /*opacity: 0;
+    animation: fadeIn 0.2s;
+    animation-direction: alternate;*/
+}
+
+#workspaces {
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
+    color: #d8d3d2;
+    background: rgba(30, 30, 46, 0.8);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    padding: 3px 15px 3px 15px;
+    color: #d8d3d2;
+    border-radius: 3px;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+
+    padding: 1px 15px 1px 15px;
+    margin: 0px 0px 0px 0px;
+    border-top: 2px solid #89b482;
+    border-bottom: 2px solid #89b482;
+    border-radius: 3px;
+    background: rgba(30, 30, 46, 0.9) /*
+            linear-gradient(#89b482) 50% 100%/calc(100% - 10px) calc(10% - 2px) no-repeat,
+            linear-gradient(#89b482) 50% 10%/calc(100% - 10px) calc(10% - 2px) no-repeat; */
+}
+
+/*#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+}*/
+
+#workspaces button:hover {
+    background: rgba(30, 30, 46, 0.85);
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-color: #d3869b; /*#E8A2AF;*/ /*#ea6962;*/
+    color: #d3869b;
+    border-radius: 5px;
+}
+
+#clock,
+#cpu,
+#memory,
+#window,
+#tray,
+#custom-media.play-pause,
+#custom-media,
+#network,
+#custom-nightlight,
+#custom-backlight,
+#pulseaudio,
+#pulseaudio.microphone,
+#custom-wallpaper,
+#custom-powermenu {
+    background: rgba(30, 30, 46, 0.8);
+    padding: 0px 10px 0px 10px;
+    margin: 10px 5px 0px 5px;
+    /*border: 1px solid #181825;*/
+    color: #d8d3d2;
+}
+
+
+#clock {
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock:hover {
+    background-color: red;
+}
+
+#cpu {
+    padding-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+}
+
+#memory {
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+
+#custom-media.play-pause {
+    padding-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+}
+
+#custom-media {
+    padding-left: 5px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+#custom-backlight {
+    padding-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+}
+
+#custom-nightlight {
+    padding-left: 5px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+#pulseaudio.microphone {
+    padding-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+}
+
+#pulseaudio {
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+#custom-wallpaper {
+    padding-left: 10px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+
+    color: #d3869b
+}
+
+#custom-powermenu {
+    padding-right: 14px;
+    padding-left: 5px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-bottom: 1px;
+
+    color: #ea6962;
+}

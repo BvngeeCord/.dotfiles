@@ -1,0 +1,33 @@
+@import "config"
+
+configuration {
+    show-icons: false;
+}
+
+window {
+    width: 20%;
+}
+
+inputbar {
+    background-color: @bg1;
+    padding: 0;
+}
+
+button {
+    //str: ""; //set in bash script
+    text-color: @fg0;
+    background-color: @bg1;
+}
+
+entry {
+    enabled: false;
+}
+
+listview {
+    columns: 1;
+    lines: 6;
+}
+
+element-text {
+    font: "JetBrainsMono Nerd Font 12";
+}

@@ -1,0 +1,14 @@
+@import "config"
+
+configuration {
+    show-icons: false;
+}
+
+window {
+    width: 35%;
+}
+
+listview {
+    columns: 3;
+    lines: 8;
+}

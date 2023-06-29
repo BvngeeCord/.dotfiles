@@ -1,0 +1,37 @@
+format = """
+[ ](#55887c)\
+$username\
+[](bg:#8a9647 fg:#55887c)\
+$directory\
+[](fg:#8a9647 bg:#b27d29)\
+$git_branch\
+$git_status\
+[](fg:#b27d29)\
+[ ]()
+"""
+# [╭─](#D4BE98)[](#55887c)\
+# [╰─ ](#D4BE98)
+
+[username]
+show_always = true
+style_user = "bg:#55887c"
+style_root = "bg:#55887c"
+format = '[$user ]($style)'
+
+[directory]
+style = "bg:#8a9647"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:#b27d29"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#b27d29"
+format = '[$all_status$ahead_behind]($style)'
+
+# (bg:#b27d29)
+#Next color if needed: #c1537?

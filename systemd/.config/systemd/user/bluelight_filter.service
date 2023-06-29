@@ -1,0 +1,7 @@
+[Unit]
+Description=Toggle the bluelight filter shader
+
+[Service]
+Type=simple
+ExecStart=/home/jack/bin/nightlight/toggle_bluelight_filter.sh
+Restart=never

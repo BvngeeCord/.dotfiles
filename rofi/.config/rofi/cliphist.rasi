@@ -1,0 +1,25 @@
+@import "config"
+
+configuration {
+    kb-accept-alt: ""; //change command, not keybind!
+    show-icons: false;
+}
+
+window {
+    width: 40%;
+    height: 35%;
+}
+
+listview {
+    columns: 2;
+}
+
+element {
+    //extreme hack fix: `cliphist list` adds numbers and spaces in the front, and `cliphist decode` requires them
+    //the -70px left padding effectively removes them from view
+    //padding: 8 8 8 -70px; //Breaks over time and doesn't work with 2 columns
+}
+
+element-text {
+    font: "JetBrainsMono Nerd Font 12";
+}

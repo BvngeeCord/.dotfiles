@@ -1,0 +1,5 @@
+timeout 297 'notify-send -u normal -t 850 "System locking in 3 seconds..."'
+timeout 298 'notify-send -u normal -t 850 "System locking in 2 seconds..."'
+timeout 299 'notify-send -u normal -t 850 "System locking in 1 seconds..."'
+timeout 300 'playerctl pause & ~/.config/swaylock/swaylock-launch.sh'
+timeout 600 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
